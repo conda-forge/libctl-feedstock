@@ -1,6 +1,6 @@
 {% set name = "libctl" %}
-{% set version = "4.1.0" %}
-{% set sha256 = "46340fe97538147f8d66f51ea9f74a79fb0e09e98b3eeb51729e836bcae6d9ec" %}
+{% set version = "4.1.1" %}
+{% set sha256 = "54eb6c9f4d91b38c3c1ed8c084858596fdd982847404b332cc3d5d5ae002f849" %}
 
 package:
   name: {{ name }}
