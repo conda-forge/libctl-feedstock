@@ -1,6 +1,6 @@
 {% set name = "libctl" %}
-{% set version = "4.1.2" %}
-{% set sha256 = "06b6532446331297b1082551a0d1b1c90afb4dcc0ad1bd8160d79283ce82af9b" %}
+{% set version = "4.1.3" %}
+{% set sha256 = "6b9fc9dd3ed74f4b3be0910b27ca41b5982474ec3a2c9d7eb0387eb0fa38ff81" %}
 
 package:
   name: {{ name }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1000
+  number: 0
   skip: True  # [win]
 
 requirements:
