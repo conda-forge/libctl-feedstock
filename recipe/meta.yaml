@@ -23,7 +23,7 @@ requirements:
 
 test:
   commands:
-    - test -f ${PREFIX}/lib/libctlgeom.${SHLIB_EXT}
+    - test -f ${PREFIX}/lib/libctlgeom${SHLIB_EXT}
 
 about:
   home: http:/github.com/stevengj/libctl
