@@ -1,6 +1,6 @@
 {% set name = "libctl" %}
-{% set version = "4.1.3" %}
-{% set sha256 = "6b9fc9dd3ed74f4b3be0910b27ca41b5982474ec3a2c9d7eb0387eb0fa38ff81" %}
+{% set version = "4.2.0" %}
+{% set sha256 = "0341ad6ea260ecda2efb3d4b679abb3d05ca6211792381979b036177a9291975" %}
 
 package:
   name: {{ name }}
@@ -23,8 +23,7 @@ requirements:
 
 test:
   commands:
-    - test -f ${PREFIX}/lib/libctlgeom.so     # [linux]
-    - test -f ${PREFIX}/lib/libctlgeom.dylib  # [osx]
+    - test -f ${PREFIX}/lib/libctlgeom${SHLIB_EXT}
 
 about:
   home: http:/github.com/stevengj/libctl
