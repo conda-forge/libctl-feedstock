@@ -12,12 +12,14 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
-  skip: True  # [win]
+  number: 1
 
 requirements:
   build:
-    - {{ compiler('c') }}
+    - m2-bash  # [win]
+    - m2-make  #[win]
+    - {{ compiler('m2w64_c') }}  # [win]
+    - {{ compiler('c') }}  # [unix]
   host:
   run:
 
