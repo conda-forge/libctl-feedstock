@@ -17,7 +17,7 @@ build:
 requirements:
   build:
     - m2-bash  # [win]
-    - m2-make  #[win]
+    - m2-make  # [win]
     - {{ compiler('m2w64_c') }}  # [win]
     - {{ compiler('c') }}  # [unix]
   host:
