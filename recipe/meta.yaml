@@ -8,16 +8,17 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://github.com/stevengj/{{ name }}/releases/download/v{{version}}/{{ name }}-{{version}}.tar.gz
+  url: https://github.com/NanoComp/{{ name }}/releases/download/v{{ version }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   skip: True  # [win]
 
 requirements:
   build:
     - {{ compiler('c') }}
+    - make
   host:
   run:
 
@@ -26,12 +27,12 @@ test:
     - test -f ${PREFIX}/lib/libctlgeom${SHLIB_EXT}
 
 about:
-  home: http:/github.com/stevengj/libctl
-  license: GPL-2.0
+  home: https://github.com/NanoComp/libctl
+  license: GPL-2.0-or-later
   license_file: COPYING
   summary:  A Guile-based library for supporting flexible control files in scientific simulations
-  doc_url: http://libctl.readthedocs.io
-  dev_url: https://github.com/stevengj/libctl
+  doc_url: https://libctl.readthedocs.io
+  dev_url: https://github.com/NanoComp/libctl
 
 extra:
   recipe-maintainers:
