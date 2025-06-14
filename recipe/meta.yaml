@@ -1,24 +1,22 @@
-{% set name = "libctl" %}
 {% set version = "4.5.1" %}
-{% set sha256 = "fcfeb2f13dda05b560f0ec6872757d9318fdfe8f4bc587eb2053a29ba328ae25" %}
 
 package:
-  name: {{ name }}
+  name: libctl
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://github.com/NanoComp/{{ name }}/releases/download/v{{ version }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  url: https://github.com/NanoComp/libctl/releases/download/v{{ version }}/libctl-{{ version }}.tar.gz
+  sha256: fcfeb2f13dda05b560f0ec6872757d9318fdfe8f4bc587eb2053a29ba328ae25
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
 
 requirements:
   build:
     - gnuconfig  # [unix]
     - {{ compiler('c') }}
+    - {{ stdlib('c') }}
     - make
   host:
   run:
