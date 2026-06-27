@@ -1,4 +1,4 @@
-{% set version = "4.7.0" %}
+{% set version = "4.7.1" %}
 
 package:
   name: libctl
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/NanoComp/libctl/releases/download/v{{ version }}/libctl-{{ version }}.tar.gz
-  sha256: 45a7e13982b560ebb4d523edcb1089fb490b18b40ffc49f7e9e6a3a4f998b66e
+  sha256: e023b4a3b6975b45260bcf343f305a62f2a7988c7349bc0dacc1208ccbf7b6b5
 
 build:
   number: 0
